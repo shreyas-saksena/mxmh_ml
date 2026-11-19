@@ -1,0 +1,13 @@
+Target,Model,alpha,max_features,min_samples_leaf
+Anxiety,Lasso,0.15848931924611143,,
+Anxiety,Ridge,1000.0,,
+Anxiety,RF tuned,,0.6,20.0
+Depression,Lasso,0.15848931924611143,,
+Depression,Ridge,562.341325190349,,
+Depression,RF tuned,,0.2,5.0
+Insomnia,Lasso,0.1,,
+Insomnia,Ridge,1000.0,,
+Insomnia,RF tuned,,0.1,5.0
+OCD,Lasso,0.25118864315095824,,
+OCD,Ridge,5623.413251903491,,
+OCD,RF tuned,,0.33,20.0

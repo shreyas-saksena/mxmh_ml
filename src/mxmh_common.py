@@ -26,6 +26,7 @@ TEST_SIZE = 0.2     # 80/20 train/test split
 N_SPLITS = 5        # folds in both the inner and outer CV
 N_REPEATS = 10      # outer CV repeats -> 50 outer folds
 SCORING = "r2"      # metric used to choose alpha in the inner CV
+N_BOOTSTRAP = 2000  # bootstrap resamples of the test set for the final evaluation
 
 #---------------------------------------------------------------------------
 # File Paths
@@ -307,3 +308,67 @@ def run_nested_cv():
     RESULTS_DIR.mkdir(exist_ok=True)
     folds.to_csv(RESULTS_DIR / "nested_cv_folds.csv", index=False)
     return folds
+
+#---------------------------------------------------------------------------
+# Final Test Evaluation
+#---------------------------------------------------------------------------
+
+def run_test_evaluation():
+    """Fit every model on the full training set and score it once on the held-out test set.
+
+    Run this only after all model and hyperparameter decisions are final. Tuned models
+    choose their hyperparameters with INNER_CV on the training set only.
+
+    Saves the selected hyperparameters to results/final_selected_hyperparameters.csv and
+    returns (Y_test, predictions, selected), where predictions[target][model] holds the
+    test-set predictions and selected is a DataFrame of the chosen hyperparameters.
+    """
+    X, Y = load_clean_dataset()
+    X_train, X_test, Y_train, Y_test = split_train_test(X, Y)
+
+    predictions = {target: {} for target in TARGETS}
+    selected = []
+    for target in TARGETS:
+        for name, model in make_models().items():
+            model.fit(X_train, Y_train[target])
+            predictions[target][name] = model.predict(X_test)
+            if hasattr(model, "best_params_"):  # tuned models (GridSearchCV)
+                params = {k.replace("model__", ""): v for k, v in model.best_params_.items()}
+                selected.append({"Target": target, "Model": name, **params})
+    selected = pd.DataFrame(selected)
+
+    RESULTS_DIR.mkdir(exist_ok=True)
+    selected.to_csv(RESULTS_DIR / "final_selected_hyperparameters.csv", index=False)
+    return Y_test, predictions, selected
+
+def _metrics(y, pred):
+    """R2, RMSE and MAE along the last axis, so it works on one sample or many resamples."""
+    resid = y - pred
+    sse = (resid ** 2).sum(axis=-1)
+    sst = ((y - y.mean(axis=-1, keepdims=True)) ** 2).sum(axis=-1)
+    return {"R2": 1 - sse / sst,
+            "RMSE": np.sqrt((resid ** 2).mean(axis=-1)),
+            "MAE": np.abs(resid).mean(axis=-1)}
+
+def bootstrap_test_metrics(y_true, predictions, n_boot=N_BOOTSTRAP, seed=RANDOM_STATE):
+    """Test-set metrics with participant-level bootstrap 95% CIs.
+
+    The test participants are resampled with replacement n_boot times; every model uses the
+    same resamples.
+
+    predictions: {model name: test-set predictions}. Returns one row per model and metric
+    (R2, RMSE, MAE) with the estimate and 95% percentile CI.
+    """
+    y = np.asarray(y_true, dtype=float)
+    rng = np.random.default_rng(seed)
+    idx = rng.integers(0, len(y), size=(n_boot, len(y)))  # one row of indices per resample
+    point = {name: _metrics(y, np.asarray(pred)) for name, pred in predictions.items()}
+    boot = {name: _metrics(y[idx], np.asarray(pred)[idx]) for name, pred in predictions.items()}
+
+    rows = []
+    for name in predictions:
+        for metric in ["R2", "RMSE", "MAE"]:
+            values = boot[name][metric]
+            rows.append({"model": name, "metric": metric, "estimate": float(point[name][metric]),
+                         "ci_low": np.percentile(values, 2.5), "ci_high": np.percentile(values, 97.5)})
+    return pd.DataFrame(rows)
