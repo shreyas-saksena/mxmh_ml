@@ -147,14 +147,23 @@ def make_feature_encoder(columns=ALL_FEATURES, freq_encoding="ordinal"):
 LASSO_ALPHAS = np.logspace(start=-4, stop=1, num=26)   # 1e-4 to 10
 RIDGE_ALPHAS = np.logspace(start=-2, stop=6, num=33)   # 1e-2 to 1e6
 
-# Inner CV: used by GridSearchCV to tune alpha within each outer training fold
+# Random forest grid for the tuned forest. The number of trees is fixed: more trees only
+# stabilize a forest, they don't make it overfit. min_samples_leaf limits tree complexity
+# (so max_depth is left unlimited). As with alpha, the ranges were widened until the
+# selected values were inside the grid.
+RF_N_ESTIMATORS = 300
+RF_MAX_FEATURES = [0.05, 0.1, 0.2, 0.33, 0.6, 1.0]   # share of features tried at each split
+RF_MIN_SAMPLES_LEAF = [1, 5, 10, 20, 40, 80]
+
+# Inner CV: used by GridSearchCV to tune hyperparameters within each outer training fold
 INNER_CV = KFold(n_splits=N_SPLITS, shuffle=True, random_state=RANDOM_STATE)
 
 def make_models(columns=ALL_FEATURES, freq_encoding="ordinal"):
     """Return the models to compare, as {name: unfitted estimator}.
 
-    Each model is a Pipeline: encode -> (scale) -> model. Lasso and Ridge are wrapped in
-    GridSearchCV, so alpha is tuned by INNER_CV every time the model is fitted.
+    Each model is a Pipeline: encode -> (scale) -> model. Lasso, Ridge and the tuned random
+    forest are wrapped in GridSearchCV, so their hyperparameters are tuned by INNER_CV every
+    time the model is fitted.
     """
     # Dummy Regressor model as (Mean) baseline: Encode -> Model (no scaling needed)
     mean_baseline_estimator = Pipeline([
@@ -189,11 +198,32 @@ def make_models(columns=ALL_FEATURES, freq_encoding="ordinal"):
                                    {"model__alpha": RIDGE_ALPHAS}, cv=INNER_CV,
                                    scoring=SCORING, refit=True)
 
+    # Random forest with scikit-learn defaults (100 trees, leaf size 1, all features):
+    # Encode -> Model. Trees only use the order of values, so no scaling.
+    rf_default_estimator = Pipeline([
+        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("model", RandomForestRegressor(random_state=RANDOM_STATE, n_jobs=1)),
+    ])
+
+    # Tuned random forest: Encode -> Model, with max_features and min_samples_leaf
+    # tuned by inner CV
+    rf_tuned_pipeline = Pipeline([
+        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("model", RandomForestRegressor(n_estimators=RF_N_ESTIMATORS,
+                                        random_state=RANDOM_STATE, n_jobs=1)),
+    ])
+    rf_tuned_estimator = GridSearchCV(rf_tuned_pipeline,
+                                      {"model__max_features": RF_MAX_FEATURES,
+                                       "model__min_samples_leaf": RF_MIN_SAMPLES_LEAF},
+                                      cv=INNER_CV, scoring=SCORING, refit=True)
+
     models = {
         "Mean baseline": mean_baseline_estimator,
         "Linear": linear_estimator,
         "Lasso": lasso_estimator,
         "Ridge": ridge_estimator,
+        "RF default": rf_default_estimator,
+        "RF tuned": rf_tuned_estimator,
     }
     return models
 
@@ -215,9 +245,11 @@ def outer_cv_scores(estimator, X, y):
     """Score one estimator on every outer fold.
 
     Returns one row per fold (fold, R2, RMSE, MAE).
-    The outer folds and the tuning inside each fold both run serially (n_jobs=1).
+    The outer folds run in parallel on all CPU cores (n_jobs=-1); the tuning inside each
+    fold runs serially. Results do not depend on n_jobs because every split and forest
+    uses a fixed seed.
     """
-    res = cross_validate(estimator, X, y, cv=OUTER_CV, scoring=_SCORERS, n_jobs=1)
+    res = cross_validate(estimator, X, y, cv=OUTER_CV, scoring=_SCORERS, n_jobs=-1)
     return pd.DataFrame({
         "fold": np.arange(len(res["test_R2"])),
         "R2": res["test_R2"],
