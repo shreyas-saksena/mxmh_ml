@@ -16,7 +16,12 @@ from sklearn.model_selection import (
     train_test_split,
 )
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
+from sklearn.preprocessing import (
+    OneHotEncoder,
+    OrdinalEncoder,
+    SplineTransformer,
+    StandardScaler,
+)
 
 #---------------------------------------------------------------------------
 # Experiment Settings
@@ -64,6 +69,16 @@ GENRE_LEVELS = GENRES
 
 ALL_FEATURES = NUMERIC_COLS + BINARY_COLS + FREQ_COLS + ["Primary streaming service", "Fav genre"]
 
+# Feature sets for the age vs music comparison. "Music" is every feature except Age.
+AGE_ONLY = ["Age"]
+MUSIC_ONLY = [c for c in ALL_FEATURES if c != "Age"]
+AGE_PLUS_MUSIC = ALL_FEATURES
+FEATURE_SETS = {
+    "Age only": AGE_ONLY,
+    "Music only": MUSIC_ONLY,
+    "Age + music": AGE_PLUS_MUSIC,
+}
+
 #---------------------------------------------------------------------------
 # Data Set Access
 #---------------------------------------------------------------------------
@@ -94,11 +109,13 @@ def split_train_test(X, Y):
 # Feature Encoding
 #---------------------------------------------------------------------------
 
-def make_feature_encoder(columns=ALL_FEATURES, freq_encoding="ordinal"):
+def make_feature_encoder(columns=ALL_FEATURES, freq_encoding="ordinal", age_spline=False):
     """Build the ColumnTransformer that encodes the raw survey columns.
 
     Only the groups present in `columns` are encoded; all other columns are dropped.
       numeric:   Age, Hours per day, passed through unchanged
+                 (with age_spline=True, Age enters through a cubic spline with 5 knots,
+                 so a linear model can fit a curved age effect)
       binary:    No = 0, Yes = 1
       frequency: "ordinal" -> Never = 0, Rarely = 1, Sometimes = 2, Very frequently = 3
                  "onehot"  -> 3 dummies per genre, Never is the reference
@@ -109,6 +126,9 @@ def make_feature_encoder(columns=ALL_FEATURES, freq_encoding="ordinal"):
     parts = []
 
     numeric_cols = [c for c in NUMERIC_COLS if c in columns]
+    if age_spline and "Age" in numeric_cols:
+        numeric_cols.remove("Age")
+        parts.append(("age_spline", SplineTransformer(n_knots=5, degree=3), ["Age"]))
     if numeric_cols:
         parts.append(("numeric", "passthrough", numeric_cols))
 
@@ -159,29 +179,30 @@ RF_MIN_SAMPLES_LEAF = [1, 5, 10, 20, 40, 80]
 # Inner CV: used by GridSearchCV to tune hyperparameters within each outer training fold
 INNER_CV = KFold(n_splits=N_SPLITS, shuffle=True, random_state=RANDOM_STATE)
 
-def make_models(columns=ALL_FEATURES, freq_encoding="ordinal"):
+def make_models(columns=ALL_FEATURES, freq_encoding="ordinal", age_spline=False):
     """Return the models to compare, as {name: unfitted estimator}.
 
     Each model is a Pipeline: encode -> (scale) -> model. Lasso, Ridge and the tuned random
     forest are wrapped in GridSearchCV, so their hyperparameters are tuned by INNER_CV every
-    time the model is fitted.
+    time the model is fitted. `columns`, `freq_encoding` and `age_spline` are passed to
+    make_feature_encoder.
     """
     # Dummy Regressor model as (Mean) baseline: Encode -> Model (no scaling needed)
     mean_baseline_estimator = Pipeline([
-        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("encode", make_feature_encoder(columns, freq_encoding, age_spline)),
         ("model", DummyRegressor(strategy="mean")),
     ])
 
     # Linear Regression: Encode -> Scale -> Model
     linear_estimator = Pipeline([
-        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("encode", make_feature_encoder(columns, freq_encoding, age_spline)),
         ("scale", StandardScaler()),
         ("model", LinearRegression()),
     ])
 
     # Lasso: Encode -> Scale -> Model, with alpha tuned by inner CV
     lasso_pipeline = Pipeline([
-        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("encode", make_feature_encoder(columns, freq_encoding, age_spline)),
         ("scale", StandardScaler()),
         ("model", Lasso(max_iter=50_000)),
     ])
@@ -191,7 +212,7 @@ def make_models(columns=ALL_FEATURES, freq_encoding="ordinal"):
 
     # Ridge: Encode -> Scale -> Model, with alpha tuned by inner CV
     ridge_pipeline = Pipeline([
-        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("encode", make_feature_encoder(columns, freq_encoding, age_spline)),
         ("scale", StandardScaler()),
         ("model", Ridge()),
     ])
@@ -202,14 +223,14 @@ def make_models(columns=ALL_FEATURES, freq_encoding="ordinal"):
     # Random forest with scikit-learn defaults (100 trees, leaf size 1, all features):
     # Encode -> Model. Trees only use the order of values, so no scaling.
     rf_default_estimator = Pipeline([
-        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("encode", make_feature_encoder(columns, freq_encoding, age_spline)),
         ("model", RandomForestRegressor(random_state=RANDOM_STATE, n_jobs=1)),
     ])
 
     # Tuned random forest: Encode -> Model, with max_features and min_samples_leaf
     # tuned by inner CV
     rf_tuned_pipeline = Pipeline([
-        ("encode", make_feature_encoder(columns, freq_encoding)),
+        ("encode", make_feature_encoder(columns, freq_encoding, age_spline)),
         ("model", RandomForestRegressor(n_estimators=RF_N_ESTIMATORS,
                                         random_state=RANDOM_STATE, n_jobs=1)),
     ])
@@ -307,6 +328,46 @@ def run_nested_cv():
 
     RESULTS_DIR.mkdir(exist_ok=True)
     folds.to_csv(RESULTS_DIR / "nested_cv_folds.csv", index=False)
+    return folds
+
+#---------------------------------------------------------------------------
+# Age vs Music Analysis
+#---------------------------------------------------------------------------
+
+def run_age_vs_music():
+    """Run nested CV for each feature set in FEATURE_SETS, on the same outer folds as
+    run_nested_cv, to measure how much music habits add beyond age.
+
+    Models: the mean baseline (once per target), Ridge with a spline for age, and the tuned
+    random forest with raw age (trees need no spline).
+
+    Saves the per-fold scores to results/age_vs_music_folds.csv and returns them as a
+    DataFrame with columns fold, R2, RMSE, MAE, target, model, feature_set.
+    """
+    X, Y = load_clean_dataset()
+    X_train, X_test, Y_train, Y_test = split_train_test(X, Y)
+    del X_test, Y_test  # the test data is not used in nested cross-validation
+
+    folds = []
+    for target in TARGETS:
+        scores = outer_cv_scores(make_models()["Mean baseline"], X_train, Y_train[target])
+        scores["target"], scores["model"], scores["feature_set"] = target, "Mean baseline", "No features"
+        folds.append(scores)
+
+        for set_name, columns in FEATURE_SETS.items():
+            models = {"Ridge": make_models(columns, age_spline=True)["Ridge"],
+                      "RF tuned": make_models(columns)["RF tuned"]}
+            for name, model in models.items():
+                start = time.time()
+                scores = outer_cv_scores(model, X_train[columns], Y_train[target])
+                scores["target"], scores["model"], scores["feature_set"] = target, name, set_name
+                folds.append(scores)
+                print(f"{target:10s} {name:8s} {set_name:12s} mean R2 = {scores.R2.mean():.3f}"
+                      f"   ({time.time() - start:.0f}s)")
+    folds = pd.concat(folds, ignore_index=True)
+
+    RESULTS_DIR.mkdir(exist_ok=True)
+    folds.to_csv(RESULTS_DIR / "age_vs_music_folds.csv", index=False)
     return folds
 
 #---------------------------------------------------------------------------
