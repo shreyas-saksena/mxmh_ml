@@ -4,9 +4,11 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy import stats
+from sklearn.base import clone
 from sklearn.compose import ColumnTransformer
 from sklearn.dummy import DummyRegressor
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.inspection import permutation_importance
 from sklearn.linear_model import Lasso, LinearRegression, Ridge
 from sklearn.model_selection import (
     GridSearchCV,
@@ -368,6 +370,53 @@ def run_age_vs_music():
 
     RESULTS_DIR.mkdir(exist_ok=True)
     folds.to_csv(RESULTS_DIR / "age_vs_music_folds.csv", index=False)
+    return folds
+
+#---------------------------------------------------------------------------
+# Permutation Importance
+#---------------------------------------------------------------------------
+
+# Held-out folds for permutation importance: 5-fold x 2 repeats = 10 folds on the training
+# set. These are the first 10 of the 50 outer folds.
+IMPORTANCE_CV = RepeatedKFold(n_splits=N_SPLITS, n_repeats=2, random_state=RANDOM_STATE)
+N_PERMUTATIONS = 10  # times each variable is shuffled in each held-out fold
+
+def run_permutation_importance():
+    """Permutation importance of each survey variable for the tuned random forest.
+
+    For each target, max_features and min_samples_leaf are chosen once by INNER_CV on the
+    whole training set. Then, in each IMPORTANCE_CV fold, a forest with those settings is
+    fitted on the training part, and each variable is shuffled N_PERMUTATIONS times in the
+    held-out part. The importance is the mean drop in R2. A variable such as Fav genre is
+    shuffled as one column, so its importance covers all of its encoded columns.
+
+    Saves the per-fold importances to results/permutation_importance_folds.csv and returns
+    them as a DataFrame with columns target, fold, variable, importance.
+    """
+    X, Y = load_clean_dataset()
+    X_train, X_test, Y_train, Y_test = split_train_test(X, Y)
+    del X_test, Y_test  # the test data is not used here
+
+    rows = []
+    for target in TARGETS:
+        start = time.time()
+        y = Y_train[target]
+        search = make_models()["RF tuned"].set_params(refit=False, n_jobs=-1).fit(X_train, y)
+        forest = clone(search.estimator).set_params(**search.best_params_)
+
+        for fold, (train_idx, test_idx) in enumerate(IMPORTANCE_CV.split(X_train)):
+            fitted = clone(forest).fit(X_train.iloc[train_idx], y.iloc[train_idx])
+            result = permutation_importance(fitted, X_train.iloc[test_idx], y.iloc[test_idx],
+                                            n_repeats=N_PERMUTATIONS, scoring=SCORING,
+                                            random_state=RANDOM_STATE, n_jobs=-1)
+            rows += [{"target": target, "fold": fold, "variable": variable, "importance": importance}
+                     for variable, importance in zip(X_train.columns, result.importances_mean)]
+        params = {k.replace("model__", ""): v for k, v in search.best_params_.items()}
+        print(f"{target:10s} {params}   ({time.time() - start:.0f}s)")
+    folds = pd.DataFrame(rows)
+
+    RESULTS_DIR.mkdir(exist_ok=True)
+    folds.to_csv(RESULTS_DIR / "permutation_importance_folds.csv", index=False)
     return folds
 
 #---------------------------------------------------------------------------

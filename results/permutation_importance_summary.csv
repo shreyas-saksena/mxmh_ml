@@ -1,0 +1,101 @@
+Target,Variable,Drop in R2,Positive folds
+Anxiety,Age,"0.082 [0.050, 0.114]",100%
+Anxiety,Frequency [Folk],"0.011 [-0.003, 0.025]",90%
+Anxiety,Hours per day,"0.006 [-0.001, 0.013]",90%
+Anxiety,Frequency [Metal],"0.004 [-0.003, 0.012]",80%
+Anxiety,Frequency [Rock],"0.004 [-0.007, 0.016]",90%
+Anxiety,Frequency [Video game music],"0.003 [-0.001, 0.008]",80%
+Anxiety,Fav genre,"0.002 [-0.001, 0.006]",80%
+Anxiety,Frequency [Lofi],"0.002 [-0.002, 0.005]",60%
+Anxiety,Frequency [Hip hop],"0.001 [-0.005, 0.008]",80%
+Anxiety,Frequency [K pop],"0.000 [-0.001, 0.002]",70%
+Anxiety,Instrumentalist,"0.000 [-0.001, 0.001]",60%
+Anxiety,Frequency [Gospel],"0.000 [-0.001, 0.001]",60%
+Anxiety,Composer,"-0.000 [-0.001, 0.000]",70%
+Anxiety,Frequency [Pop],"-0.000 [-0.007, 0.007]",50%
+Anxiety,Primary streaming service,"-0.000 [-0.002, 0.001]",50%
+Anxiety,While working,"-0.000 [-0.001, 0.000]",30%
+Anxiety,Exploratory,"-0.000 [-0.002, 0.001]",40%
+Anxiety,Frequency [Latin],"-0.001 [-0.002, 0.001]",50%
+Anxiety,Foreign languages,"-0.001 [-0.005, 0.003]",60%
+Anxiety,Frequency [R&B],"-0.001 [-0.009, 0.007]",60%
+Anxiety,Frequency [Jazz],"-0.001 [-0.004, 0.001]",10%
+Anxiety,Frequency [Country],"-0.002 [-0.005, 0.002]",30%
+Anxiety,Frequency [EDM],"-0.002 [-0.007, 0.002]",20%
+Anxiety,Frequency [Rap],"-0.003 [-0.008, 0.003]",20%
+Anxiety,Frequency [Classical],"-0.003 [-0.006, 0.000]",0%
+Depression,Frequency [Metal],"0.023 [0.003, 0.044]",90%
+Depression,Age,"0.020 [-0.008, 0.048]",80%
+Depression,Frequency [Rock],"0.017 [0.003, 0.031]",90%
+Depression,Hours per day,"0.014 [-0.002, 0.031]",90%
+Depression,Frequency [Hip hop],"0.011 [-0.007, 0.029]",70%
+Depression,Frequency [Country],"0.005 [-0.002, 0.012]",80%
+Depression,Frequency [Jazz],"0.004 [-0.004, 0.013]",80%
+Depression,Frequency [Folk],"0.004 [-0.006, 0.015]",70%
+Depression,Frequency [Rap],"0.004 [-0.025, 0.033]",80%
+Depression,Frequency [EDM],"0.004 [-0.006, 0.014]",70%
+Depression,Primary streaming service,"0.002 [-0.003, 0.006]",80%
+Depression,Instrumentalist,"0.001 [-0.004, 0.005]",70%
+Depression,Composer,"-0.000 [-0.002, 0.002]",30%
+Depression,Frequency [Gospel],"-0.001 [-0.006, 0.004]",50%
+Depression,Fav genre,"-0.001 [-0.010, 0.009]",60%
+Depression,Foreign languages,"-0.001 [-0.009, 0.007]",50%
+Depression,Frequency [R&B],"-0.001 [-0.007, 0.005]",50%
+Depression,Frequency [Pop],"-0.001 [-0.011, 0.008]",50%
+Depression,While working,"-0.001 [-0.005, 0.002]",30%
+Depression,Exploratory,"-0.002 [-0.005, 0.001]",20%
+Depression,Frequency [K pop],"-0.002 [-0.005, 0.001]",30%
+Depression,Frequency [Latin],"-0.002 [-0.006, 0.001]",10%
+Depression,Frequency [Video game music],"-0.003 [-0.010, 0.004]",30%
+Depression,Frequency [Classical],"-0.003 [-0.007, 0.001]",20%
+Depression,Frequency [Lofi],"-0.003 [-0.008, 0.002]",20%
+Insomnia,Frequency [Metal],"0.013 [-0.001, 0.026]",90%
+Insomnia,Hours per day,"0.010 [-0.002, 0.022]",90%
+Insomnia,Frequency [Latin],"0.006 [-0.000, 0.012]",90%
+Insomnia,Frequency [Classical],"0.005 [-0.001, 0.011]",90%
+Insomnia,Age,"0.005 [-0.002, 0.012]",80%
+Insomnia,Frequency [Rap],"0.004 [-0.004, 0.012]",80%
+Insomnia,Frequency [R&B],"0.003 [-0.002, 0.008]",90%
+Insomnia,Frequency [Pop],"0.002 [-0.001, 0.006]",80%
+Insomnia,Fav genre,"0.002 [-0.008, 0.011]",60%
+Insomnia,Frequency [EDM],"0.001 [-0.010, 0.013]",60%
+Insomnia,Composer,"0.001 [-0.004, 0.007]",70%
+Insomnia,Instrumentalist,"0.001 [-0.001, 0.003]",80%
+Insomnia,Frequency [Video game music],"0.001 [-0.004, 0.006]",70%
+Insomnia,Frequency [Folk],"0.001 [-0.004, 0.006]",70%
+Insomnia,Foreign languages,"0.000 [-0.003, 0.004]",60%
+Insomnia,Exploratory,"0.000 [-0.004, 0.005]",60%
+Insomnia,Frequency [Lofi],"-0.000 [-0.004, 0.004]",40%
+Insomnia,Frequency [Country],"-0.000 [-0.005, 0.004]",40%
+Insomnia,Frequency [Rock],"-0.000 [-0.009, 0.009]",70%
+Insomnia,Primary streaming service,"-0.001 [-0.005, 0.004]",40%
+Insomnia,While working,"-0.001 [-0.003, 0.001]",40%
+Insomnia,Frequency [Hip hop],"-0.001 [-0.010, 0.007]",50%
+Insomnia,Frequency [K pop],"-0.002 [-0.005, 0.002]",30%
+Insomnia,Frequency [Jazz],"-0.003 [-0.009, 0.003]",30%
+Insomnia,Frequency [Gospel],"-0.003 [-0.008, 0.001]",20%
+OCD,Age,"0.017 [0.009, 0.025]",100%
+OCD,Hours per day,"0.009 [-0.001, 0.020]",80%
+OCD,Frequency [R&B],"0.003 [-0.011, 0.017]",80%
+OCD,Frequency [Rap],"0.002 [-0.003, 0.006]",70%
+OCD,Foreign languages,"0.001 [-0.005, 0.008]",80%
+OCD,Frequency [Country],"0.001 [-0.005, 0.007]",70%
+OCD,Frequency [Metal],"0.001 [-0.002, 0.004]",60%
+OCD,Frequency [EDM],"0.001 [-0.014, 0.016]",80%
+OCD,While working,"0.000 [-0.002, 0.002]",80%
+OCD,Composer,"-0.000 [-0.001, 0.001]",40%
+OCD,Frequency [Folk],"-0.000 [-0.003, 0.003]",40%
+OCD,Frequency [Video game music],"-0.000 [-0.003, 0.003]",30%
+OCD,Exploratory,"-0.000 [-0.002, 0.002]",60%
+OCD,Primary streaming service,"-0.001 [-0.002, 0.000]",30%
+OCD,Frequency [Classical],"-0.001 [-0.007, 0.005]",60%
+OCD,Frequency [Lofi],"-0.001 [-0.012, 0.010]",70%
+OCD,Frequency [Gospel],"-0.001 [-0.003, 0.001]",30%
+OCD,Frequency [Pop],"-0.001 [-0.003, 0.001]",20%
+OCD,Frequency [Hip hop],"-0.001 [-0.006, 0.004]",50%
+OCD,Frequency [Rock],"-0.001 [-0.004, 0.002]",40%
+OCD,Instrumentalist,"-0.001 [-0.004, 0.001]",20%
+OCD,Frequency [Latin],"-0.002 [-0.006, 0.003]",40%
+OCD,Fav genre,"-0.002 [-0.006, 0.003]",20%
+OCD,Frequency [K pop],"-0.002 [-0.003, -0.000]",10%
+OCD,Frequency [Jazz],"-0.002 [-0.007, 0.003]",20%

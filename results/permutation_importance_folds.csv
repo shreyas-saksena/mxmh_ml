@@ -1,0 +1,1001 @@
+target,fold,variable,importance
+Anxiety,0,Age,0.09119549985381785
+Anxiety,0,Hours per day,0.006056431179076416
+Anxiety,0,While working,0.0003891514743344815
+Anxiety,0,Instrumentalist,0.001687797165288596
+Anxiety,0,Composer,0.0001838253869839379
+Anxiety,0,Exploratory,-0.0030421374345117602
+Anxiety,0,Foreign languages,0.0006844504618533475
+Anxiety,0,Frequency [Classical],-0.005500637974418498
+Anxiety,0,Frequency [Country],-0.0008831044031896052
+Anxiety,0,Frequency [EDM],0.0031479468349129404
+Anxiety,0,Frequency [Folk],0.01801486987280513
+Anxiety,0,Frequency [Gospel],-0.0003439944695803332
+Anxiety,0,Frequency [Hip hop],0.003569796273185888
+Anxiety,0,Frequency [Jazz],0.0009948001435717059
+Anxiety,0,Frequency [K pop],0.002368137272573234
+Anxiety,0,Frequency [Latin],0.00044265976234791893
+Anxiety,0,Frequency [Lofi],0.002933186375604613
+Anxiety,0,Frequency [Metal],0.011612355407177578
+Anxiety,0,Frequency [Pop],-0.0014574294900981388
+Anxiety,0,Frequency [R&B],0.003623017786275784
+Anxiety,0,Frequency [Rap],0.0015577139109258288
+Anxiety,0,Frequency [Rock],0.005972319362945544
+Anxiety,0,Frequency [Video game music],0.007686111914888927
+Anxiety,0,Primary streaming service,-0.0011893157401968613
+Anxiety,0,Fav genre,0.0016258036932066955
+Anxiety,1,Age,0.11567087093929684
+Anxiety,1,Hours per day,-0.002262996471353329
+Anxiety,1,While working,-1.0433573247836669e-05
+Anxiety,1,Instrumentalist,-0.0008057719208185765
+Anxiety,1,Composer,0.0002143449940968267
+Anxiety,1,Exploratory,-0.0006130785324614085
+Anxiety,1,Foreign languages,0.0009890044396984043
+Anxiety,1,Frequency [Classical],-0.0010563529558543338
+Anxiety,1,Frequency [Country],0.0017541201761546276
+Anxiety,1,Frequency [EDM],-0.0007381721878675362
+Anxiety,1,Frequency [Folk],0.011692101668371035
+Anxiety,1,Frequency [Gospel],-0.0003365821862500562
+Anxiety,1,Frequency [Hip hop],0.0061840429790873674
+Anxiety,1,Frequency [Jazz],-0.004547922299187745
+Anxiety,1,Frequency [K pop],0.00033242320874145027
+Anxiety,1,Frequency [Latin],0.0007308082567485053
+Anxiety,1,Frequency [Lofi],0.0034128703525002748
+Anxiety,1,Frequency [Metal],0.0006003089722107946
+Anxiety,1,Frequency [Pop],-0.000725697539675485
+Anxiety,1,Frequency [R&B],-0.0007753403463195863
+Anxiety,1,Frequency [Rap],-0.0007916617516386393
+Anxiety,1,Frequency [Rock],-0.01963496267563928
+Anxiety,1,Frequency [Video game music],0.0009934456866542707
+Anxiety,1,Primary streaming service,-0.0024296776203709624
+Anxiety,1,Fav genre,0.002590192469000474
+Anxiety,2,Age,0.07304361515669625
+Anxiety,2,Hours per day,0.009528005544920481
+Anxiety,2,While working,-0.001368627775739828
+Anxiety,2,Instrumentalist,-0.0007738974054220749
+Anxiety,2,Composer,0.00017329526824259034
+Anxiety,2,Exploratory,-0.0007509325209841711
+Anxiety,2,Foreign languages,-0.0006266294516036775
+Anxiety,2,Frequency [Classical],-0.0014977287129046112
+Anxiety,2,Frequency [Country],-0.0009933432305688661
+Anxiety,2,Frequency [EDM],-0.0007564586456935806
+Anxiety,2,Frequency [Folk],0.004363865078795037
+Anxiety,2,Frequency [Gospel],0.0010780102161689897
+Anxiety,2,Frequency [Hip hop],0.0036456872304470476
+Anxiety,2,Frequency [Jazz],-0.0008671371577208209
+Anxiety,2,Frequency [K pop],0.0009292051330917483
+Anxiety,2,Frequency [Latin],-0.0019981409196498045
+Anxiety,2,Frequency [Lofi],-0.0013562131789291664
+Anxiety,2,Frequency [Metal],0.0024634621930739397
+Anxiety,2,Frequency [Pop],0.0050226067895203785
+Anxiety,2,Frequency [R&B],0.002486833853311621
+Anxiety,2,Frequency [Rap],-0.006257929765137627
+Anxiety,2,Frequency [Rock],0.008144622124461588
+Anxiety,2,Frequency [Video game music],-0.0010727311097013525
+Anxiety,2,Primary streaming service,6.383214017586791e-05
+Anxiety,2,Fav genre,0.004711526896116369
+Anxiety,3,Age,0.042284938257943806
+Anxiety,3,Hours per day,0.0013985181646222534
+Anxiety,3,While working,-0.00032495790337060403
+Anxiety,3,Instrumentalist,0.00020585877510916894
+Anxiety,3,Composer,8.84451026969657e-05
+Anxiety,3,Exploratory,0.0011274857896709013
+Anxiety,3,Foreign languages,-0.008406046937708012
+Anxiety,3,Frequency [Classical],-0.0004194019235881696
+Anxiety,3,Frequency [Country],-0.003782845726688111
+Anxiety,3,Frequency [EDM],-0.00809179922941441
+Anxiety,3,Frequency [Folk],-0.01337696471231421
+Anxiety,3,Frequency [Gospel],0.0006831895813885103
+Anxiety,3,Frequency [Hip hop],0.0011927117481794758
+Anxiety,3,Frequency [Jazz],-0.0009083280529728177
+Anxiety,3,Frequency [K pop],-0.0014432876156705078
+Anxiety,3,Frequency [Latin],6.298959193636877e-05
+Anxiety,3,Frequency [Lofi],-0.0015496810090217528
+Anxiety,3,Frequency [Metal],0.0026711848898558267
+Anxiety,3,Frequency [Pop],-0.00022688477447952994
+Anxiety,3,Frequency [R&B],-0.0065648865960518
+Anxiety,3,Frequency [Rap],0.0010696890224383359
+Anxiety,3,Frequency [Rock],0.005169873226057764
+Anxiety,3,Frequency [Video game music],0.0035689260744148133
+Anxiety,3,Primary streaming service,0.00023891725678419905
+Anxiety,3,Fav genre,0.0032296213350279323
+Anxiety,4,Age,0.04912780182552058
+Anxiety,4,Hours per day,0.005254143992814065
+Anxiety,4,While working,4.230141683536637e-05
+Anxiety,4,Instrumentalist,0.000509064827930561
+Anxiety,4,Composer,0.00021635040493417357
+Anxiety,4,Exploratory,0.0004735735924556117
+Anxiety,4,Foreign languages,0.0014974874456877175
+Anxiety,4,Frequency [Classical],-0.007829923120986747
+Anxiety,4,Frequency [Country],-0.005649221448175978
+Anxiety,4,Frequency [EDM],-0.00551068931637041
+Anxiety,4,Frequency [Folk],0.014181867667362546
+Anxiety,4,Frequency [Gospel],-0.0006741304580305974
+Anxiety,4,Frequency [Hip hop],0.003390995087990778
+Anxiety,4,Frequency [Jazz],-0.0017562764748292436
+Anxiety,4,Frequency [K pop],0.0019056443562911252
+Anxiety,4,Frequency [Latin],0.0005194635351495225
+Anxiety,4,Frequency [Lofi],0.003896626882394283
+Anxiety,4,Frequency [Metal],0.006867901720846015
+Anxiety,4,Frequency [Pop],0.0011591761742313466
+Anxiety,4,Frequency [R&B],0.0033379528689726047
+Anxiety,4,Frequency [Rap],-0.0014722484455509167
+Anxiety,4,Frequency [Rock],0.00458705958835266
+Anxiety,4,Frequency [Video game music],0.007375793072402747
+Anxiety,4,Primary streaming service,0.000725168429444889
+Anxiety,4,Fav genre,0.005568442594218614
+Anxiety,5,Age,0.08333111652246687
+Anxiety,5,Hours per day,0.016538639352822737
+Anxiety,5,While working,0.00025599298019212123
+Anxiety,5,Instrumentalist,-6.47027121843502e-05
+Anxiety,5,Composer,0.00034845562158644097
+Anxiety,5,Exploratory,0.00114045262648933
+Anxiety,5,Foreign languages,0.0010045933721386292
+Anxiety,5,Frequency [Classical],-0.0017318262882468406
+Anxiety,5,Frequency [Country],-0.0013490385001193705
+Anxiety,5,Frequency [EDM],-0.003937227171732771
+Anxiety,5,Frequency [Folk],0.013443554239886867
+Anxiety,5,Frequency [Gospel],3.882883658493652e-05
+Anxiety,5,Frequency [Hip hop],-0.009779139029777562
+Anxiety,5,Frequency [Jazz],-0.0006634565933391068
+Anxiety,5,Frequency [K pop],0.0005395988800324436
+Anxiety,5,Frequency [Latin],-8.301328972839527e-05
+Anxiety,5,Frequency [Lofi],0.005941443890940723
+Anxiety,5,Frequency [Metal],-0.003917709316336382
+Anxiety,5,Frequency [Pop],0.00590363802840479
+Anxiety,5,Frequency [R&B],0.0006514382294116716
+Anxiety,5,Frequency [Rap],-0.004025821301288768
+Anxiety,5,Frequency [Rock],0.005475514564932516
+Anxiety,5,Frequency [Video game music],0.004075233029342562
+Anxiety,5,Primary streaming service,-0.0014563145495440134
+Anxiety,5,Fav genre,-0.00231574973930454
+Anxiety,6,Age,0.08010318147205463
+Anxiety,6,Hours per day,0.00826439339973888
+Anxiety,6,While working,-0.0009286144767192694
+Anxiety,6,Instrumentalist,0.0002456974718868854
+Anxiety,6,Composer,-0.00027227821137845167
+Anxiety,6,Exploratory,0.0010047023926670119
+Anxiety,6,Foreign languages,0.0004892386901665935
+Anxiety,6,Frequency [Classical],-0.0009754694595113022
+Anxiety,6,Frequency [Country],0.0007619375806473983
+Anxiety,6,Frequency [EDM],-0.0017820354298420215
+Anxiety,6,Frequency [Folk],0.015820431668872315
+Anxiety,6,Frequency [Gospel],5.717686708206493e-07
+Anxiety,6,Frequency [Hip hop],0.0029263926437976817
+Anxiety,6,Frequency [Jazz],-0.0006669470745173545
+Anxiety,6,Frequency [K pop],-0.0005120328821192732
+Anxiety,6,Frequency [Latin],-0.0030620735101121845
+Anxiety,6,Frequency [Lofi],-0.0020286392367660612
+Anxiety,6,Frequency [Metal],-0.004178111627339021
+Anxiety,6,Frequency [Pop],-0.006731331481870151
+Anxiety,6,Frequency [R&B],-0.0036288402743397063
+Anxiety,6,Frequency [Rap],-0.012173072488844083
+Anxiety,6,Frequency [Rock],0.009715415708467467
+Anxiety,6,Frequency [Video game music],-0.0007873580038806893
+Anxiety,6,Primary streaming service,-0.00012279516522576417
+Anxiety,6,Fav genre,0.0025360763313458266
+Anxiety,7,Age,0.07194973058952638
+Anxiety,7,Hours per day,0.0036270792628555594
+Anxiety,7,While working,-0.0002439662288071909
+Anxiety,7,Instrumentalist,0.000539486319783844
+Anxiety,7,Composer,-0.00037454393416231914
+Anxiety,7,Exploratory,-0.0005462151480462474
+Anxiety,7,Foreign languages,-0.004317317511839303
+Anxiety,7,Frequency [Classical],-0.00410848245918749
+Anxiety,7,Frequency [Country],0.0003948256868275046
+Anxiety,7,Frequency [EDM],-0.004645532668949392
+Anxiety,7,Frequency [Folk],0.017286047079493383
+Anxiety,7,Frequency [Gospel],0.0007840715383929941
+Anxiety,7,Frequency [Hip hop],0.003962763624936782
+Anxiety,7,Frequency [Jazz],-0.0012484096429701275
+Anxiety,7,Frequency [K pop],0.0006417961313838427
+Anxiety,7,Frequency [Latin],-0.0016909880536321697
+Anxiety,7,Frequency [Lofi],0.0018187296656843265
+Anxiety,7,Frequency [Metal],0.008457737553277278
+Anxiety,7,Frequency [Pop],0.0030118643920929887
+Anxiety,7,Frequency [R&B],0.003056191012979481
+Anxiety,7,Frequency [Rap],-0.002585126871074539
+Anxiety,7,Frequency [Rock],0.0030383066598498876
+Anxiety,7,Frequency [Video game music],0.006323714158084992
+Anxiety,7,Primary streaming service,-0.0003227365950206007
+Anxiety,7,Fav genre,0.004234453197473698
+Anxiety,8,Age,0.10170313528468009
+Anxiety,8,Hours per day,0.0066694725283834135
+Anxiety,8,While working,-0.0004142104535605484
+Anxiety,8,Instrumentalist,0.0001625653343243827
+Anxiety,8,Composer,-0.000856502044216334
+Anxiety,8,Exploratory,-0.0015802909667777532
+Anxiety,8,Foreign languages,0.001498831098242648
+Anxiety,8,Frequency [Classical],-0.0015945641442841386
+Anxiety,8,Frequency [Country],-0.005715276082997068
+Anxiety,8,Frequency [EDM],0.0001414052334373972
+Anxiety,8,Frequency [Folk],0.00672028975851684
+Anxiety,8,Frequency [Gospel],0.0005133033460637537
+Anxiety,8,Frequency [Hip hop],-0.003444116485290838
+Anxiety,8,Frequency [Jazz],-0.0036724465535023843
+Anxiety,8,Frequency [K pop],0.00014268701148214546
+Anxiety,8,Frequency [Latin],-0.0015081095074263695
+Anxiety,8,Frequency [Lofi],0.0034462636942191537
+Anxiety,8,Frequency [Metal],0.00836854650756711
+Anxiety,8,Frequency [Pop],0.0036632003873427466
+Anxiety,8,Frequency [R&B],0.002050849926356446
+Anxiety,8,Frequency [Rap],-0.0021483879018611486
+Anxiety,8,Frequency [Rock],0.010672163754800323
+Anxiety,8,Frequency [Video game music],0.0038021336577261588
+Anxiety,8,Primary streaming service,0.0016024420590993293
+Anxiety,8,Fav genre,0.002718742832094745
+Anxiety,9,Age,0.10992407294540185
+Anxiety,9,Hours per day,0.00605423987659689
+Anxiety,9,While working,-2.8811752190216477e-05
+Anxiety,9,Instrumentalist,-2.297341907095962e-05
+Anxiety,9,Composer,1.9724994164738163e-05
+Anxiety,9,Exploratory,-0.0012952846608458412
+Anxiety,9,Foreign languages,-0.001969298651852691
+Anxiety,9,Frequency [Classical],-0.0032733820242306978
+Anxiety,9,Frequency [Country],-4.505097109523959e-05
+Anxiety,9,Frequency [EDM],-0.0006926632168018698
+Anxiety,9,Frequency [Folk],0.02377815774053571
+Anxiety,9,Frequency [Gospel],-0.00035089307412862204
+Anxiety,9,Frequency [Hip hop],0.0033141698412158527
+Anxiety,9,Frequency [Jazz],-0.0009769738336777522
+Anxiety,9,Frequency [K pop],-0.0010624341869691079
+Anxiety,9,Frequency [Latin],0.0006836199293017708
+Anxiety,9,Frequency [Lofi],-0.0010939613403304405
+Anxiety,9,Frequency [Metal],0.008660591795612982
+Anxiety,9,Frequency [Pop],-0.011605384838674192
+Anxiety,9,Frequency [R&B],-0.014722087354386026
+Anxiety,9,Frequency [Rap],-0.0009328233975186117
+Anxiety,9,Frequency [Rock],0.008007364870681866
+Anxiety,9,Frequency [Video game music],0.0015297630975591447
+Anxiety,9,Primary streaming service,0.00046711038876220414
+Anxiety,9,Fav genre,-0.0025114531602803635
+Depression,0,Age,0.03747279587707675
+Depression,0,Hours per day,0.012855488083983114
+Depression,0,While working,-1.4855738670993546e-06
+Depression,0,Instrumentalist,0.0029625496368793636
+Depression,0,Composer,0.00238271588645953
+Depression,0,Exploratory,-0.0005396189089380221
+Depression,0,Foreign languages,0.0013901503844254593
+Depression,0,Frequency [Classical],0.0007634227897944434
+Depression,0,Frequency [Country],0.003265116953546976
+Depression,0,Frequency [EDM],0.009678740025189324
+Depression,0,Frequency [Folk],0.015441289935999103
+Depression,0,Frequency [Gospel],-0.0001348198412025159
+Depression,0,Frequency [Hip hop],0.013755170755833402
+Depression,0,Frequency [Jazz],0.006017917691377184
+Depression,0,Frequency [K pop],0.0004438115930013864
+Depression,0,Frequency [Latin],-0.0056754689800353805
+Depression,0,Frequency [Lofi],-0.006765790104357993
+Depression,0,Frequency [Metal],0.018154283061919796
+Depression,0,Frequency [Pop],0.002011140283735435
+Depression,0,Frequency [R&B],-0.0013918603196232172
+Depression,0,Frequency [Rap],0.012229400272106483
+Depression,0,Frequency [Rock],0.015561796765414892
+Depression,0,Frequency [Video game music],-0.0084542687447433
+Depression,0,Primary streaming service,0.0023900037354622873
+Depression,0,Fav genre,-0.013812133523640534
+Depression,1,Age,0.032826518853389754
+Depression,1,Hours per day,-0.008621986208369858
+Depression,1,While working,-0.006193796584310162
+Depression,1,Instrumentalist,0.003326607394372505
+Depression,1,Composer,-0.0020827235899828823
+Depression,1,Exploratory,-0.0013907048594954286
+Depression,1,Foreign languages,-0.0014993828252295005
+Depression,1,Frequency [Classical],-0.00424984183429038
+Depression,1,Frequency [Country],0.0042331287344877675
+Depression,1,Frequency [EDM],0.009892361301204211
+Depression,1,Frequency [Folk],-0.006600037075189791
+Depression,1,Frequency [Gospel],0.002491673029212926
+Depression,1,Frequency [Hip hop],0.018608691536069154
+Depression,1,Frequency [Jazz],-0.002431836370561935
+Depression,1,Frequency [K pop],-0.003938220947309434
+Depression,1,Frequency [Latin],-0.00040409308109197185
+Depression,1,Frequency [Lofi],-0.0027834426034887283
+Depression,1,Frequency [Metal],0.00014314911300803424
+Depression,1,Frequency [Pop],-0.0017408375463289106
+Depression,1,Frequency [R&B],0.0055069585737615445
+Depression,1,Frequency [Rap],0.017477091061761707
+Depression,1,Frequency [Rock],0.004676161589434602
+Depression,1,Frequency [Video game music],0.0007624226248707511
+Depression,1,Primary streaming service,0.0019220214111340783
+Depression,1,Fav genre,0.0025114737929161747
+Depression,2,Age,0.01748519615996542
+Depression,2,Hours per day,0.028598326025063004
+Depression,2,While working,0.002293523784130258
+Depression,2,Instrumentalist,0.0006866293784157151
+Depression,2,Composer,-0.0011532110551784492
+Depression,2,Exploratory,0.00047816434500425053
+Depression,2,Foreign languages,0.0031614301677032053
+Depression,2,Frequency [Classical],-0.0032714193516895753
+Depression,2,Frequency [Country],0.014106888665252459
+Depression,2,Frequency [EDM],-0.008000239946945476
+Depression,2,Frequency [Folk],0.0004968047418693278
+Depression,2,Frequency [Gospel],-3.518571040904695e-05
+Depression,2,Frequency [Hip hop],-0.010678921051963297
+Depression,2,Frequency [Jazz],0.010552747583942635
+Depression,2,Frequency [K pop],-0.0012441109026069652
+Depression,2,Frequency [Latin],0.0019383445709757585
+Depression,2,Frequency [Lofi],0.0006940730347888557
+Depression,2,Frequency [Metal],-0.003642824453571403
+Depression,2,Frequency [Pop],0.00011591473152265941
+Depression,2,Frequency [R&B],0.000813167310494356
+Depression,2,Frequency [Rap],-0.04549832162426508
+Depression,2,Frequency [Rock],0.014745410039845353
+Depression,2,Frequency [Video game music],0.0014217275557492637
+Depression,2,Primary streaming service,0.008318560894388071
+Depression,2,Fav genre,0.007796216251200361
+Depression,3,Age,0.026959209877853253
+Depression,3,Hours per day,0.03211157426003528
+Depression,3,While working,-0.001950508978718457
+Depression,3,Instrumentalist,-0.0011599941168096261
+Depression,3,Composer,-0.00020641290428267123
+Depression,3,Exploratory,0.00038123269621033186
+Depression,3,Foreign languages,-0.0008718425528958962
+Depression,3,Frequency [Classical],-0.004519226277078759
+Depression,3,Frequency [Country],0.006468798369240025
+Depression,3,Frequency [EDM],0.0037986932712031464
+Depression,3,Frequency [Folk],0.011204356655462776
+Depression,3,Frequency [Gospel],0.0015676142756779975
+Depression,3,Frequency [Hip hop],0.02487679872387505
+Depression,3,Frequency [Jazz],0.004518395657030372
+Depression,3,Frequency [K pop],-0.0010220979821836007
+Depression,3,Frequency [Latin],-0.0032701119044817985
+Depression,3,Frequency [Lofi],-0.0012587211350892913
+Depression,3,Frequency [Metal],0.04106991440381078
+Depression,3,Frequency [Pop],0.0012087611607574877
+Depression,3,Frequency [R&B],-0.009373692572383074
+Depression,3,Frequency [Rap],0.01609057497795151
+Depression,3,Frequency [Rock],0.028235674291794875
+Depression,3,Frequency [Video game music],-0.0075740825786385305
+Depression,3,Primary streaming service,0.0006806173830372298
+Depression,3,Fav genre,-0.003717904452867726
+Depression,4,Age,-0.02761595435674984
+Depression,4,Hours per day,0.0007487540377647206
+Depression,4,While working,-0.004041938558684455
+Depression,4,Instrumentalist,0.0040254532646684105
+Depression,4,Composer,0.0009068516635636348
+Depression,4,Exploratory,-0.0013951466459516614
+Depression,4,Foreign languages,-0.0016017268791683414
+Depression,4,Frequency [Classical],0.0016105501481176842
+Depression,4,Frequency [Country],-0.0034202159759222583
+Depression,4,Frequency [EDM],-0.0026024872065869677
+Depression,4,Frequency [Folk],0.007676174512899303
+Depression,4,Frequency [Gospel],-0.0026681855553799204
+Depression,4,Frequency [Hip hop],0.020970568046626947
+Depression,4,Frequency [Jazz],0.011407421267508744
+Depression,4,Frequency [K pop],-0.00790037300300891
+Depression,4,Frequency [Latin],-0.006261822170516273
+Depression,4,Frequency [Lofi],-0.005142633843986421
+Depression,4,Frequency [Metal],0.023193379094648046
+Depression,4,Frequency [Pop],-0.0006678055276127748
+Depression,4,Frequency [R&B],-0.0020512758575251255
+Depression,4,Frequency [Rap],0.014601808999454157
+Depression,4,Frequency [Rock],0.01539072036649074
+Depression,4,Frequency [Video game music],-0.006259416083810298
+Depression,4,Primary streaming service,0.0018555467690580473
+Depression,4,Fav genre,-0.0034306011465322973
+Depression,5,Age,0.03331326640960437
+Depression,5,Hours per day,0.016091390625553946
+Depression,5,While working,0.0003083496328988855
+Depression,5,Instrumentalist,0.0029438871953856973
+Depression,5,Composer,-0.0002876943319505165
+Depression,5,Exploratory,-0.004942850952436096
+Depression,5,Foreign languages,-0.0006069473925051528
+Depression,5,Frequency [Classical],-0.003841981168857056
+Depression,5,Frequency [Country],-0.001113817736969802
+Depression,5,Frequency [EDM],0.010147147495197184
+Depression,5,Frequency [Folk],0.009987106062120433
+Depression,5,Frequency [Gospel],-0.0065897037685923475
+Depression,5,Frequency [Hip hop],0.019197316109447537
+Depression,5,Frequency [Jazz],0.010768602426715023
+Depression,5,Frequency [K pop],0.0002509002897648549
+Depression,5,Frequency [Latin],-0.0020626012917747795
+Depression,5,Frequency [Lofi],-0.00031888950015783734
+Depression,5,Frequency [Metal],0.0371078782199897
+Depression,5,Frequency [Pop],-0.001343422956014917
+Depression,5,Frequency [R&B],0.0010963673001238906
+Depression,5,Frequency [Rap],0.024187244004816234
+Depression,5,Frequency [Rock],0.021715710451477566
+Depression,5,Frequency [Video game music],-0.003217725902521451
+Depression,5,Primary streaming service,-0.004750819612068224
+Depression,5,Fav genre,-0.010802120477975186
+Depression,6,Age,0.037593680030165236
+Depression,6,Hours per day,0.019975029484229346
+Depression,6,While working,0.0002643457734688104
+Depression,6,Instrumentalist,-0.006446965810989957
+Depression,6,Composer,-0.0003379474261143711
+Depression,6,Exploratory,-0.0023398626444780858
+Depression,6,Foreign languages,0.006022567223518538
+Depression,6,Frequency [Classical],-0.0017839187403405176
+Depression,6,Frequency [Country],0.0017456594580419038
+Depression,6,Frequency [EDM],0.0009956984627176092
+Depression,6,Frequency [Folk],-0.002822587470132698
+Depression,6,Frequency [Gospel],0.0029151024165986472
+Depression,6,Frequency [Hip hop],-0.006453283915756747
+Depression,6,Frequency [Jazz],0.0035754061444022156
+Depression,6,Frequency [K pop],-0.0023000453908142648
+Depression,6,Frequency [Latin],-0.00017464764705629187
+Depression,6,Frequency [Lofi],-0.0015503424897603591
+Depression,6,Frequency [Metal],0.03095279866533236
+Depression,6,Frequency [Pop],0.007904148279860568
+Depression,6,Frequency [R&B],0.004165425569358472
+Depression,6,Frequency [Rap],-0.022827187781356385
+Depression,6,Frequency [Rock],0.024707816379285753
+Depression,6,Frequency [Video game music],0.009194736510816393
+Depression,6,Primary streaming service,0.0001428239887977467
+Depression,6,Fav genre,0.001990261147748029
+Depression,7,Age,-0.0012777025961341671
+Depression,7,Hours per day,0.01694247573762363
+Depression,7,While working,-0.00268981133272298
+Depression,7,Instrumentalist,0.00028275460921897146
+Depression,7,Composer,0.00223868724182823
+Depression,7,Exploratory,-0.00010288594837835064
+Depression,7,Foreign languages,-0.01574567540259314
+Depression,7,Frequency [Classical],-0.0015925396587725404
+Depression,7,Frequency [Country],0.009651654131437825
+Depression,7,Frequency [EDM],0.01503281190769824
+Depression,7,Frequency [Folk],0.006337582822168286
+Depression,7,Frequency [Gospel],0.0006288675609072536
+Depression,7,Frequency [Hip hop],0.011737090742300005
+Depression,7,Frequency [Jazz],0.0022514476703700327
+Depression,7,Frequency [K pop],-0.0022309831795937485
+Depression,7,Frequency [Latin],-0.0051889415785724815
+Depression,7,Frequency [Lofi],-0.010309254818049207
+Depression,7,Frequency [Metal],0.035586280877476395
+Depression,7,Frequency [Pop],-0.0015753294733261368
+Depression,7,Frequency [R&B],-0.0026631176866538818
+Depression,7,Frequency [Rap],0.011630199421803423
+Depression,7,Frequency [Rock],0.023107549427090802
+Depression,7,Frequency [Video game music],-0.003936298137217409
+Depression,7,Primary streaming service,-0.00037939403724507326
+Depression,7,Fav genre,0.006473076223592489
+Depression,8,Age,0.008805332458057657
+Depression,8,Hours per day,0.00686690213556006
+Depression,8,While working,-0.0021344887692759107
+Depression,8,Instrumentalist,0.0028926125693877315
+Depression,8,Composer,-0.0011262332836326383
+Depression,8,Exploratory,-0.006116909778629798
+Depression,8,Foreign languages,0.00041449657163846745
+Depression,8,Frequency [Classical],-0.008537089431299449
+Depression,8,Frequency [Country],0.00880122668334996
+Depression,8,Frequency [EDM],0.006286164345199674
+Depression,8,Frequency [Folk],-0.007169786140967238
+Depression,8,Frequency [Gospel],-0.007340628177462038
+Depression,8,Frequency [Hip hop],-0.005535932893639151
+Depression,8,Frequency [Jazz],-0.009687063109336513
+Depression,8,Frequency [K pop],-0.003132320521835219
+Depression,8,Frequency [Latin],-0.0009748264344969449
+Depression,8,Frequency [Lofi],0.0008182656300524726
+Depression,8,Frequency [Metal],0.01667572223907867
+Depression,8,Frequency [Pop],0.0006667230699090032
+Depression,8,Frequency [R&B],-0.005802870907044832
+Depression,8,Frequency [Rap],0.0003038367979209977
+Depression,8,Frequency [Rock],-0.0044288035165570006
+Depression,8,Frequency [Video game music],-0.005524440766092509
+Depression,8,Primary streaming service,0.0029773982807219435
+Depression,8,Fav genre,0.0008720124756833481
+Depression,9,Age,0.03173685232299034
+Depression,9,Hours per day,0.018467380302804436
+Depression,9,While working,-0.00015194606418199584
+Depression,9,Instrumentalist,-0.0022350142810914518
+Depression,9,Composer,-0.0008794507177525169
+Depression,9,Exploratory,-0.0011777625941263082
+Depression,9,Foreign languages,0.0007876244220648365
+Depression,9,Frequency [Classical],-0.003909553343449623
+Depression,9,Frequency [Country],0.005424539872827183
+Depression,9,Frequency [EDM],-0.004288448596537131
+Depression,9,Frequency [Folk],0.008624535281316858
+Depression,9,Frequency [Gospel],0.0014863979532347082
+Depression,9,Frequency [Hip hop],0.021960455401578795
+Depression,9,Frequency [Jazz],0.0062711606134069784
+Depression,9,Frequency [K pop],0.00014851194781098087
+Depression,9,Frequency [Latin],-0.0014390890347300012
+Depression,9,Frequency [Lofi],-0.006111617450341156
+Depression,9,Frequency [Metal],0.03445972735115018
+Depression,9,Frequency [Pop],-0.02076267372558438
+Depression,9,Frequency [R&B],0.0007377898627270674
+Depression,9,Frequency [Rap],0.014804155971944533
+Depression,9,Frequency [Rock],0.026445119572216413
+Depression,9,Frequency [Video game music],-0.0022184219920458824
+Depression,9,Primary streaming service,0.002813496462631626
+Depression,9,Fav genre,0.004395163422661585
+Insomnia,0,Age,0.013239747595868401
+Insomnia,0,Hours per day,0.014215550111819741
+Insomnia,0,While working,-0.0006872685476520312
+Insomnia,0,Instrumentalist,6.299772786904079e-05
+Insomnia,0,Composer,0.0022668050502419046
+Insomnia,0,Exploratory,-0.002912190994488495
+Insomnia,0,Foreign languages,-0.0025122184909238234
+Insomnia,0,Frequency [Classical],-0.0018124734824315092
+Insomnia,0,Frequency [Country],-0.0031807662210905476
+Insomnia,0,Frequency [EDM],0.005312678473988086
+Insomnia,0,Frequency [Folk],0.004353154799299763
+Insomnia,0,Frequency [Gospel],-0.0013440514850291297
+Insomnia,0,Frequency [Hip hop],-0.009385485878602596
+Insomnia,0,Frequency [Jazz],0.003276363431664464
+Insomnia,0,Frequency [K pop],-0.0009969649753616473
+Insomnia,0,Frequency [Latin],0.013477100063068726
+Insomnia,0,Frequency [Lofi],-0.004813901134162346
+Insomnia,0,Frequency [Metal],0.014566451637682465
+Insomnia,0,Frequency [Pop],0.006346914060900211
+Insomnia,0,Frequency [R&B],-0.004346711246919354
+Insomnia,0,Frequency [Rap],-0.0008566846250152915
+Insomnia,0,Frequency [Rock],0.0040840073379806215
+Insomnia,0,Frequency [Video game music],0.0004980857821900942
+Insomnia,0,Primary streaming service,0.00325626957870212
+Insomnia,0,Fav genre,-0.0024449007724593906
+Insomnia,1,Age,0.0022270941154240663
+Insomnia,1,Hours per day,-0.007968544709473235
+Insomnia,1,While working,0.0011656813289511515
+Insomnia,1,Instrumentalist,0.00032222354179302083
+Insomnia,1,Composer,-0.006213317252118466
+Insomnia,1,Exploratory,0.001646472628025808
+Insomnia,1,Foreign languages,0.0010450458215356174
+Insomnia,1,Frequency [Classical],0.0010079860443783285
+Insomnia,1,Frequency [Country],0.0026527431187689855
+Insomnia,1,Frequency [EDM],2.5061430068507028e-05
+Insomnia,1,Frequency [Folk],0.0009960480035821173
+Insomnia,1,Frequency [Gospel],-0.002473259545930628
+Insomnia,1,Frequency [Hip hop],-0.0029633873867527137
+Insomnia,1,Frequency [Jazz],-0.0017667660573978284
+Insomnia,1,Frequency [K pop],-0.0024315257906980968
+Insomnia,1,Frequency [Latin],0.003833003672140767
+Insomnia,1,Frequency [Lofi],4.394854242558699e-05
+Insomnia,1,Frequency [Metal],0.023670090237671516
+Insomnia,1,Frequency [Pop],0.0007444294877272051
+Insomnia,1,Frequency [R&B],0.0017357091696481141
+Insomnia,1,Frequency [Rap],0.004883833679902383
+Insomnia,1,Frequency [Rock],0.007308475956277693
+Insomnia,1,Frequency [Video game music],0.008788240351319077
+Insomnia,1,Primary streaming service,-0.003982278012621521
+Insomnia,1,Fav genre,0.009611279298360942
+Insomnia,2,Age,0.005980473866943781
+Insomnia,2,Hours per day,0.012851386160658196
+Insomnia,2,While working,-0.003198081211956483
+Insomnia,2,Instrumentalist,0.0016335541718326073
+Insomnia,2,Composer,0.005650305168821324
+Insomnia,2,Exploratory,-0.0061254603179005775
+Insomnia,2,Foreign languages,0.0016031569672379064
+Insomnia,2,Frequency [Classical],0.005088550146943205
+Insomnia,2,Frequency [Country],0.0030651493366896767
+Insomnia,2,Frequency [EDM],0.013362617503045326
+Insomnia,2,Frequency [Folk],0.0003727881290760848
+Insomnia,2,Frequency [Gospel],-0.009438568251157986
+Insomnia,2,Frequency [Hip hop],-0.00950205983015313
+Insomnia,2,Frequency [Jazz],0.0012912333587815183
+Insomnia,2,Frequency [K pop],-0.003285531057936153
+Insomnia,2,Frequency [Latin],3.601415407854525e-05
+Insomnia,2,Frequency [Lofi],-0.0030311662799747618
+Insomnia,2,Frequency [Metal],-0.001742555939389312
+Insomnia,2,Frequency [Pop],0.0025896292792304655
+Insomnia,2,Frequency [R&B],0.009941480328734298
+Insomnia,2,Frequency [Rap],-0.009183318910535055
+Insomnia,2,Frequency [Rock],-0.011900911286821202
+Insomnia,2,Frequency [Video game music],0.00208994518707063
+Insomnia,2,Primary streaming service,0.0004158028413816628
+Insomnia,2,Fav genre,0.004933042711345537
+Insomnia,3,Age,0.006357068366346119
+Insomnia,3,Hours per day,0.026926176642845023
+Insomnia,3,While working,0.0007089501458368508
+Insomnia,3,Instrumentalist,-0.0003114777406747815
+Insomnia,3,Composer,0.0031942278486793985
+Insomnia,3,Exploratory,0.0056815466106696745
+Insomnia,3,Foreign languages,0.005939698610187338
+Insomnia,3,Frequency [Classical],0.008804928962015823
+Insomnia,3,Frequency [Country],-0.0032281490927230207
+Insomnia,3,Frequency [EDM],0.011438108399247637
+Insomnia,3,Frequency [Folk],-0.000987371486016775
+Insomnia,3,Frequency [Gospel],-0.0031283005143618037
+Insomnia,3,Frequency [Hip hop],0.002804008290359794
+Insomnia,3,Frequency [Jazz],-0.01165280544032099
+Insomnia,3,Frequency [K pop],-0.00298513596335358
+Insomnia,3,Frequency [Latin],0.007050039673492381
+Insomnia,3,Frequency [Lofi],0.0025967131682151255
+Insomnia,3,Frequency [Metal],0.010818338924025162
+Insomnia,3,Frequency [Pop],0.0012475303483722832
+Insomnia,3,Frequency [R&B],0.006319795382277615
+Insomnia,3,Frequency [Rap],0.009495074173056995
+Insomnia,3,Frequency [Rock],0.0011161403345888443
+Insomnia,3,Frequency [Video game music],-0.0017651766644738332
+Insomnia,3,Primary streaming service,-0.00015161051461480833
+Insomnia,3,Fav genre,0.0040785676843159814
+Insomnia,4,Age,0.004748163818823359
+Insomnia,4,Hours per day,0.010246641251215138
+Insomnia,4,While working,0.00045449167262646696
+Insomnia,4,Instrumentalist,0.002639123092655282
+Insomnia,4,Composer,0.0014662344922145687
+Insomnia,4,Exploratory,-0.0023152789892932012
+Insomnia,4,Foreign languages,-0.0024638012878567817
+Insomnia,4,Frequency [Classical],0.008334749556081544
+Insomnia,4,Frequency [Country],-0.0009003741554019617
+Insomnia,4,Frequency [EDM],-0.007428514166004485
+Insomnia,4,Frequency [Folk],-0.005906052243691118
+Insomnia,4,Frequency [Gospel],-0.002808910143220733
+Insomnia,4,Frequency [Hip hop],0.0032240804634003804
+Insomnia,4,Frequency [Jazz],-0.0014673763806591245
+Insomnia,4,Frequency [K pop],0.0004443093484610805
+Insomnia,4,Frequency [Latin],-0.0005893159235473289
+Insomnia,4,Frequency [Lofi],0.002371301405447168
+Insomnia,4,Frequency [Metal],0.010758055361438312
+Insomnia,4,Frequency [Pop],-4.1635294784514444e-06
+Insomnia,4,Frequency [R&B],0.003468192286351812
+Insomnia,4,Frequency [Rap],0.009143144885721299
+Insomnia,4,Frequency [Rock],-0.0021635563566121396
+Insomnia,4,Frequency [Video game music],-0.00467995088324843
+Insomnia,4,Primary streaming service,0.0013955039390349255
+Insomnia,4,Fav genre,-0.0004379627047477963
+Insomnia,5,Age,0.007092919924542107
+Insomnia,5,Hours per day,0.004665020803713815
+Insomnia,5,While working,-0.002386757443825993
+Insomnia,5,Instrumentalist,0.00028981421047192814
+Insomnia,5,Composer,-0.0006252770990273881
+Insomnia,5,Exploratory,-0.00016546820369138792
+Insomnia,5,Foreign languages,0.0005129628474223935
+Insomnia,5,Frequency [Classical],0.002120416392707747
+Insomnia,5,Frequency [Country],0.001894300281555039
+Insomnia,5,Frequency [EDM],0.0055557967461941525
+Insomnia,5,Frequency [Folk],0.002370608016487308
+Insomnia,5,Frequency [Gospel],-0.005174790537366736
+Insomnia,5,Frequency [Hip hop],-0.0026543976998718135
+Insomnia,5,Frequency [Jazz],-0.0060376208060233475
+Insomnia,5,Frequency [K pop],-0.0022146404258723607
+Insomnia,5,Frequency [Latin],0.006326145053881927
+Insomnia,5,Frequency [Lofi],-0.00011758217210176004
+Insomnia,5,Frequency [Metal],3.388707112117473e-05
+Insomnia,5,Frequency [Pop],0.0034624860409188884
+Insomnia,5,Frequency [R&B],0.0031110812636856223
+Insomnia,5,Frequency [Rap],0.0017255640239303594
+Insomnia,5,Frequency [Rock],-0.012750556759711085
+Insomnia,5,Frequency [Video game music],-0.0003959527328583512
+Insomnia,5,Primary streaming service,-0.0017999171325113305
+Insomnia,5,Fav genre,0.009609775596335291
+Insomnia,6,Age,0.011015107858712004
+Insomnia,6,Hours per day,0.012608103652142665
+Insomnia,6,While working,-0.002055749683758168
+Insomnia,6,Instrumentalist,0.0020061957759032524
+Insomnia,6,Composer,0.005150750775923696
+Insomnia,6,Exploratory,0.0007111358489125142
+Insomnia,6,Foreign languages,0.0003492651806036529
+Insomnia,6,Frequency [Classical],0.008866984827166025
+Insomnia,6,Frequency [Country],0.005836461969291063
+Insomnia,6,Frequency [EDM],0.005956739327589655
+Insomnia,6,Frequency [Folk],0.004595384518439305
+Insomnia,6,Frequency [Gospel],0.0006166262121255039
+Insomnia,6,Frequency [Hip hop],0.0050553059594159455
+Insomnia,6,Frequency [Jazz],-5.7660224660216476e-05
+Insomnia,6,Frequency [K pop],0.0021804454386113226
+Insomnia,6,Frequency [Latin],0.006245649460189517
+Insomnia,6,Frequency [Lofi],-0.00022113786733994888
+Insomnia,6,Frequency [Metal],0.029356332022888943
+Insomnia,6,Frequency [Pop],0.003845430369458935
+Insomnia,6,Frequency [R&B],0.0034896828884526166
+Insomnia,6,Frequency [Rap],0.0028260583044390384
+Insomnia,6,Frequency [Rock],0.0041598648889975
+Insomnia,6,Frequency [Video game music],0.0016520229272571907
+Insomnia,6,Primary streaming service,-0.006748968218316598
+Insomnia,6,Fav genre,-0.0012583130412542553
+Insomnia,7,Age,-0.004445206274192315
+Insomnia,7,Hours per day,0.01273804237412044
+Insomnia,7,While working,-0.0017634950166459662
+Insomnia,7,Instrumentalist,-0.002580458738389435
+Insomnia,7,Composer,0.004927436174727129
+Insomnia,7,Exploratory,0.0008040681352355806
+Insomnia,7,Foreign languages,-0.0012053645894663846
+Insomnia,7,Frequency [Classical],0.0003845183081914283
+Insomnia,7,Frequency [Country],-0.0038626164508388404
+Insomnia,7,Frequency [EDM],-0.012158491847427455
+Insomnia,7,Frequency [Folk],0.003062971735986242
+Insomnia,7,Frequency [Gospel],0.0020320317714068504
+Insomnia,7,Frequency [Hip hop],0.00039214807138896466
+Insomnia,7,Frequency [Jazz],-0.006925904837497854
+Insomnia,7,Frequency [K pop],-0.00609570525653882
+Insomnia,7,Frequency [Latin],0.008895983168680321
+Insomnia,7,Frequency [Lofi],-0.0022947258056197238
+Insomnia,7,Frequency [Metal],0.02101958769459762
+Insomnia,7,Frequency [Pop],0.006296878610316381
+Insomnia,7,Frequency [R&B],0.0033821799706783675
+Insomnia,7,Frequency [Rap],0.007187226567333516
+Insomnia,7,Frequency [Rock],0.0013536110247810763
+Insomnia,7,Frequency [Video game music],0.0008323181564444226
+Insomnia,7,Primary streaming service,0.00338477444984987
+Insomnia,7,Fav genre,0.005527002839630923
+Insomnia,8,Age,-0.000905579370124232
+Insomnia,8,Hours per day,0.002918159816056787
+Insomnia,8,While working,0.0008935620604148987
+Insomnia,8,Instrumentalist,0.0021642346610938447
+Insomnia,8,Composer,-0.004397845285670787
+Insomnia,8,Exploratory,0.002192712371014827
+Insomnia,8,Foreign languages,-4.929598604430652e-06
+Insomnia,8,Frequency [Classical],0.010498031201705994
+Insomnia,8,Frequency [Country],-0.0018084541761216322
+Insomnia,8,Frequency [EDM],-6.40934517148084e-05
+Insomnia,8,Frequency [Folk],0.003324892953760661
+Insomnia,8,Frequency [Gospel],-0.0051960451653537245
+Insomnia,8,Frequency [Hip hop],0.00786889764924149
+Insomnia,8,Frequency [Jazz],6.003280044053483e-05
+Insomnia,8,Frequency [K pop],0.0005385215320637959
+Insomnia,8,Frequency [Latin],0.010332863210874699
+Insomnia,8,Frequency [Lofi],0.004727066678780478
+Insomnia,8,Frequency [Metal],0.0041009229431967055
+Insomnia,8,Frequency [Pop],0.0006876133506196203
+Insomnia,8,Frequency [R&B],0.005852077659584121
+Insomnia,8,Frequency [Rap],0.011291376745461611
+Insomnia,8,Frequency [Rock],0.004702551684898981
+Insomnia,8,Frequency [Video game music],0.002225504554587665
+Insomnia,8,Primary streaming service,-0.0004138799708570562
+Insomnia,8,Fav genre,-0.01524040258032081
+Insomnia,9,Age,0.0017667472723400745
+Insomnia,9,Hours per day,0.012614074267849796
+Insomnia,9,While working,-0.0008718220328060133
+Insomnia,9,Instrumentalist,0.0036845561350691393
+Insomnia,9,Composer,0.002290343134383832
+Insomnia,9,Exploratory,0.0036202509129980576
+Insomnia,9,Foreign languages,0.00020150424357189277
+Insomnia,9,Frequency [Classical],0.008866829608438187
+Insomnia,9,Frequency [Country],-0.0017310644570077915
+Insomnia,9,Frequency [EDM],-0.007187369254935549
+Insomnia,9,Frequency [Folk],-0.003655302883407885
+Insomnia,9,Frequency [Gospel],-0.005195096484555994
+Insomnia,9,Frequency [Hip hop],-0.007885206440172387
+Insomnia,9,Frequency [Jazz],-0.004338251784359937
+Insomnia,9,Frequency [K pop],-0.0005823606797559999
+Insomnia,9,Frequency [Latin],0.0032350233257832928
+Insomnia,9,Frequency [Lofi],-0.000302072026079625
+Insomnia,9,Frequency [Metal],0.013938352179022905
+Insomnia,9,Frequency [Pop],-0.0013431587567861558
+Insomnia,9,Frequency [R&B],0.0005743375431725206
+Insomnia,9,Frequency [Rap],0.004346494345268926
+Insomnia,9,Frequency [Rock],0.0024398625580069667
+Insomnia,9,Frequency [Video game music],0.0006410152561755145
+Insomnia,9,Primary streaming service,-0.0013204927297606806
+Insomnia,9,Fav genre,0.0006510226851789924
+OCD,0,Age,0.02725943832847246
+OCD,0,Hours per day,0.010609851920472368
+OCD,0,While working,0.0013972169739678076
+OCD,0,Instrumentalist,-0.0004611831124308852
+OCD,0,Composer,0.0005259437117782651
+OCD,0,Exploratory,-0.0035030758712167208
+OCD,0,Foreign languages,0.0051105870943025655
+OCD,0,Frequency [Classical],-0.003457543010749664
+OCD,0,Frequency [Country],0.006820414486923165
+OCD,0,Frequency [EDM],0.00522446614724581
+OCD,0,Frequency [Folk],-4.263362577409113e-05
+OCD,0,Frequency [Gospel],-0.00037217127874540347
+OCD,0,Frequency [Hip hop],0.0010979210807453676
+OCD,0,Frequency [Jazz],-0.002032467701354379
+OCD,0,Frequency [K pop],-0.0013317305982210703
+OCD,0,Frequency [Latin],-0.0004890709495124046
+OCD,0,Frequency [Lofi],0.0038850646145411893
+OCD,0,Frequency [Metal],0.00075570477364455
+OCD,0,Frequency [Pop],-0.0009632321415731004
+OCD,0,Frequency [R&B],0.0013961033277327672
+OCD,0,Frequency [Rap],0.0048050486652840285
+OCD,0,Frequency [Rock],-0.0031494733960092613
+OCD,0,Frequency [Video game music],-0.0011519555231281897
+OCD,0,Primary streaming service,6.185059597342279e-05
+OCD,0,Fav genre,0.0009414307485673068
+OCD,1,Age,0.020626410298090682
+OCD,1,Hours per day,0.012574039833787898
+OCD,1,While working,0.0016942182977284005
+OCD,1,Instrumentalist,-0.0017077040566509938
+OCD,1,Composer,-0.0007606341804818672
+OCD,1,Exploratory,0.0003544571973553401
+OCD,1,Foreign languages,0.0011464323125973785
+OCD,1,Frequency [Classical],0.0021770204844145935
+OCD,1,Frequency [Country],-3.3100259266172216e-05
+OCD,1,Frequency [EDM],0.000753175409455864
+OCD,1,Frequency [Folk],0.0022733011156234827
+OCD,1,Frequency [Gospel],0.00048175701716852705
+OCD,1,Frequency [Hip hop],-0.002340754692812086
+OCD,1,Frequency [Jazz],-0.0007671946138430808
+OCD,1,Frequency [K pop],-0.0033949779371065802
+OCD,1,Frequency [Latin],0.000557123017577621
+OCD,1,Frequency [Lofi],0.004174375657854635
+OCD,1,Frequency [Metal],-0.00014548282072807117
+OCD,1,Frequency [Pop],0.0005103782327443241
+OCD,1,Frequency [R&B],0.005848620483894185
+OCD,1,Frequency [Rap],-0.004966159970617256
+OCD,1,Frequency [Rock],0.00040629034174830545
+OCD,1,Frequency [Video game music],-0.003084631025602269
+OCD,1,Primary streaming service,-0.0016493738830959948
+OCD,1,Fav genre,0.001729993516411088
+OCD,2,Age,0.01767877746342028
+OCD,2,Hours per day,0.014027994827180135
+OCD,2,While working,0.0003959605899038543
+OCD,2,Instrumentalist,-0.003316917686543963
+OCD,2,Composer,0.0009367022843043582
+OCD,2,Exploratory,0.00012496963759922597
+OCD,2,Foreign languages,0.001827554934703568
+OCD,2,Frequency [Classical],-0.012488992595120308
+OCD,2,Frequency [Country],0.0005309879148356789
+OCD,2,Frequency [EDM],0.0031573556466603313
+OCD,2,Frequency [Folk],-0.0025394319029917733
+OCD,2,Frequency [Gospel],0.0007001228156732874
+OCD,2,Frequency [Hip hop],0.0004965454052874962
+OCD,2,Frequency [Jazz],-0.0001845565844361019
+OCD,2,Frequency [K pop],-0.0020244162776962503
+OCD,2,Frequency [Latin],-0.0027759990231994935
+OCD,2,Frequency [Lofi],-0.004047046625402206
+OCD,2,Frequency [Metal],0.005103381830819464
+OCD,2,Frequency [Pop],-0.00047626930420787696
+OCD,2,Frequency [R&B],-0.0005684261715170003
+OCD,2,Frequency [Rap],0.0027650227096849057
+OCD,2,Frequency [Rock],-0.003726389639489547
+OCD,2,Frequency [Video game music],-1.7310632212463874e-05
+OCD,2,Primary streaming service,0.0001287846589137498
+OCD,2,Fav genre,-0.0004550274016053013
+OCD,3,Age,0.01581549104569633
+OCD,3,Hours per day,0.015427473408285852
+OCD,3,While working,0.0002537361581868236
+OCD,3,Instrumentalist,0.00037531463534832275
+OCD,3,Composer,-2.3814807015354322e-05
+OCD,3,Exploratory,0.0011876404115092275
+OCD,3,Foreign languages,-0.003494329632365967
+OCD,3,Frequency [Classical],-0.00035009932922954736
+OCD,3,Frequency [Country],0.0025055718126630435
+OCD,3,Frequency [EDM],0.009390883049954423
+OCD,3,Frequency [Folk],-0.002675275680409894
+OCD,3,Frequency [Gospel],-0.0014821175472807479
+OCD,3,Frequency [Hip hop],0.0013508233246208312
+OCD,3,Frequency [Jazz],0.0012034885454389576
+OCD,3,Frequency [K pop],-0.002425509139706394
+OCD,3,Frequency [Latin],0.0009668809372844756
+OCD,3,Frequency [Lofi],0.00015994759805616489
+OCD,3,Frequency [Metal],-0.0012192644868327385
+OCD,3,Frequency [Pop],-0.0017823895325042804
+OCD,3,Frequency [R&B],0.00943642869410678
+OCD,3,Frequency [Rap],0.0026908579317096335
+OCD,3,Frequency [Rock],0.0014159382594354341
+OCD,3,Frequency [Video game music],0.003744243782235657
+OCD,3,Primary streaming service,-0.0021390908820206446
+OCD,3,Fav genre,-0.0002417562704012055
+OCD,4,Age,0.021312095300634114
+OCD,4,Hours per day,0.003674722509168149
+OCD,4,While working,0.0007062206327169918
+OCD,4,Instrumentalist,-0.0013408195229003717
+OCD,4,Composer,-0.0015689831137554399
+OCD,4,Exploratory,0.0013008906465128867
+OCD,4,Foreign languages,0.00048724226181589
+OCD,4,Frequency [Classical],0.0011580121191858916
+OCD,4,Frequency [Country],0.0036271472363236467
+OCD,4,Frequency [EDM],-0.02649615748271279
+OCD,4,Frequency [Folk],0.003238030804619396
+OCD,4,Frequency [Gospel],0.0004446857829150996
+OCD,4,Frequency [Hip hop],0.0024528306254311795
+OCD,4,Frequency [Jazz],-0.0003776141515377196
+OCD,4,Frequency [K pop],-0.001333426206872823
+OCD,4,Frequency [Latin],0.0007166781049561477
+OCD,4,Frequency [Lofi],0.001900717621107595
+OCD,4,Frequency [Metal],-6.3407545693428e-05
+OCD,4,Frequency [Pop],-0.0016275356260429864
+OCD,4,Frequency [R&B],0.012870791723188146
+OCD,4,Frequency [Rap],0.0013281877215982618
+OCD,4,Frequency [Rock],-0.0003790735603242057
+OCD,4,Frequency [Video game music],-0.0013527278811921394
+OCD,4,Primary streaming service,-0.0007954223826546425
+OCD,4,Fav genre,-0.0021466869118242026
+OCD,5,Age,0.007906674276307046
+OCD,5,Hours per day,-0.000823757189618779
+OCD,5,While working,0.0008133526828016713
+OCD,5,Instrumentalist,-0.001997754355609893
+OCD,5,Composer,-0.0004378222274127319
+OCD,5,Exploratory,0.000667326774979804
+OCD,5,Foreign languages,0.0046088135730525835
+OCD,5,Frequency [Classical],0.00033330231721977465
+OCD,5,Frequency [Country],-0.010260001623665294
+OCD,5,Frequency [EDM],-0.00870093137469945
+OCD,5,Frequency [Folk],-0.004015738915059375
+OCD,5,Frequency [Gospel],-0.0005979785680845451
+OCD,5,Frequency [Hip hop],-0.005472366298115028
+OCD,5,Frequency [Jazz],6.036702983343023e-05
+OCD,5,Frequency [K pop],-0.0015854850490597983
+OCD,5,Frequency [Latin],-0.0028755643779430962
+OCD,5,Frequency [Lofi],-0.022713595032819178
+OCD,5,Frequency [Metal],0.0014108916453353215
+OCD,5,Frequency [Pop],-0.0007733142343741229
+OCD,5,Frequency [R&B],0.005503030262154085
+OCD,5,Frequency [Rap],0.0011911490565000183
+OCD,5,Frequency [Rock],-0.005276538898391437
+OCD,5,Frequency [Video game music],-0.001636167513604958
+OCD,5,Primary streaming service,-0.00045095666275136727
+OCD,5,Fav genre,-0.0004886386975074819
+OCD,6,Age,0.00925822247658461
+OCD,6,Hours per day,0.0060049015698778515
+OCD,6,While working,-0.003659736209792497
+OCD,6,Instrumentalist,-0.0004352008345628433
+OCD,6,Composer,-0.0002339941119995581
+OCD,6,Exploratory,0.0005860794568005034
+OCD,6,Foreign languages,0.0026193454881042522
+OCD,6,Frequency [Classical],0.0011557365895442317
+OCD,6,Frequency [Country],0.0025071860894613886
+OCD,6,Frequency [EDM],0.0007204525728020328
+OCD,6,Frequency [Folk],-0.0007100050702768534
+OCD,6,Frequency [Gospel],-0.005099234102879957
+OCD,6,Frequency [Hip hop],0.002494627547111361
+OCD,6,Frequency [Jazz],-1.1324079053465219e-05
+OCD,6,Frequency [K pop],-0.0028582018078932127
+OCD,6,Frequency [Latin],-0.0094098168784158
+OCD,6,Frequency [Lofi],0.0036756859832432266
+OCD,6,Frequency [Metal],-0.0026663534240347732
+OCD,6,Frequency [Pop],-0.0002074313886447743
+OCD,6,Frequency [R&B],0.011571800307376567
+OCD,6,Frequency [Rap],0.0038695631479888195
+OCD,6,Frequency [Rock],-0.0013838586772998984
+OCD,6,Frequency [Video game music],-0.0008862382350672604
+OCD,6,Primary streaming service,-0.0002616582717661853
+OCD,6,Fav genre,-0.0038867058977370417
+OCD,7,Age,0.013645301302658475
+OCD,7,Hours per day,0.017271727997755292
+OCD,7,While working,0.0009729383765079813
+OCD,7,Instrumentalist,-0.0046658269295733025
+OCD,7,Composer,0.0005857395522094411
+OCD,7,Exploratory,-0.0016354670347226707
+OCD,7,Foreign languages,0.007365393720438052
+OCD,7,Frequency [Classical],0.0037275305417146633
+OCD,7,Frequency [Country],0.0007793901615973043
+OCD,7,Frequency [EDM],0.012127963799036467
+OCD,7,Frequency [Folk],0.0014190066586887927
+OCD,7,Frequency [Gospel],-0.00019152550661558632
+OCD,7,Frequency [Hip hop],-0.0038636759017737
+OCD,7,Frequency [Jazz],-0.0025862877777337754
+OCD,7,Frequency [K pop],-0.002789803539657754
+OCD,7,Frequency [Latin],-0.0004224964872837633
+OCD,7,Frequency [Lofi],0.004967681801501356
+OCD,7,Frequency [Metal],0.0019793566904960703
+OCD,7,Frequency [Pop],0.0008373115421116628
+OCD,7,Frequency [R&B],0.006457322063687876
+OCD,7,Frequency [Rap],0.005887476878340958
+OCD,7,Frequency [Rock],-0.0017048611788552325
+OCD,7,Frequency [Video game music],-0.002873225777060251
+OCD,7,Primary streaming service,-0.0003192496500449171
+OCD,7,Fav genre,-0.0023616204902126904
+OCD,8,Age,0.01629209052207664
+OCD,8,Hours per day,0.017786121389960184
+OCD,8,While working,0.0010578142072608099
+OCD,8,Instrumentalist,0.00040453332666700036
+OCD,8,Composer,0.00027002141366210263
+OCD,8,Exploratory,-0.0005206032238734726
+OCD,8,Foreign languages,-0.009178314670333398
+OCD,8,Frequency [Classical],0.0019001018685736114
+OCD,8,Frequency [Country],-0.002348894012602354
+OCD,8,Frequency [EDM],0.006297633317220774
+OCD,8,Frequency [Folk],0.0015374213849171704
+OCD,8,Frequency [Gospel],-0.002228470105103619
+OCD,8,Frequency [Hip hop],-0.00031539392681780856
+OCD,8,Frequency [Jazz],-0.010490528319324432
+OCD,8,Frequency [K pop],0.000335017684418637
+OCD,8,Frequency [Latin],-0.0036615496666744353
+OCD,8,Frequency [Lofi],0.003533131615228069
+OCD,8,Frequency [Metal],0.0021717676060664217
+OCD,8,Frequency [Pop],-0.0015137790884392822
+OCD,8,Frequency [R&B],0.002790230833878271
+OCD,8,Frequency [Rap],-0.00046156332388245234
+OCD,8,Frequency [Rock],0.00047636285613892324
+OCD,8,Frequency [Video game music],0.0037532070745136424
+OCD,8,Primary streaming service,-0.00028457274182325243
+OCD,8,Fav genre,-0.00011551514473281398
+OCD,9,Age,0.020025526015170936
+OCD,9,Hours per day,-0.005163648925215547
+OCD,9,While working,-0.00019167104039317096
+OCD,9,Instrumentalist,-0.0006640293153350018
+OCD,9,Composer,-1.1141083128185513e-05
+OCD,9,Exploratory,-0.0006062909743061118
+OCD,9,Foreign languages,0.0017897544941026355
+OCD,9,Frequency [Classical],-0.0015206312858699223
+OCD,9,Frequency [Country],0.0044622543024464886
+OCD,9,Frequency [EDM],0.005020176110361074
+OCD,9,Frequency [Folk],-0.00019348583960636655
+OCD,9,Frequency [Gospel],-0.0006299842388434174
+OCD,9,Frequency [Hip hop],-0.008666569424471726
+OCD,9,Frequency [Jazz],-0.0068787706594753304
+OCD,9,Frequency [K pop],-0.0002887655465840577
+OCD,9,Frequency [Latin],0.0005870833570906342
+OCD,9,Frequency [Lofi],-0.004488948706353723
+OCD,9,Frequency [Metal],0.0008512668571805104
+OCD,9,Frequency [Pop],-0.003304031986083311
+OCD,9,Frequency [R&B],-0.023799957743901957
+OCD,9,Frequency [Rap],-0.0007455522694679751
+OCD,9,Frequency [Rock],0.0004073048096972842
+OCD,9,Frequency [Video game music],0.0014947568503376862
+OCD,9,Primary streaming service,9.224463334926991e-05
+OCD,9,Fav genre,-0.009886239654168105
